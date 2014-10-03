@@ -24,26 +24,40 @@ var IdealImageSliderInstallHelper = (function() {
 	/*
 	 * Build slider HTML and initialize
 	 *
-   * <div id="slider">
-   *     <img src="img/1.jpg" alt="">
-   *     <img data-src="img/2.jpg" src="" alt="">
-   *     <img data-src="img/3.jpg" src="" alt="">
-   * </div>
-   * new IdealImageSlider.Slider('#slider');
-   */
+	 * <div id="slider">
+	 * 	<img src="img/1.jpg" alt="">
+	 * 	<img data-src="img/2.jpg" src="" alt="">
+	 * 	<img data-src="img/3.jpg" src="" alt="">
+	 * </div>
+	 * <script>
+	 * 	new IdealImageSlider.Slider('#slider');
+	 * </script>
+	 */
 	var init = function(location, options) {
-		if (!location || options.slides.length < 1) {
+		var slides, id, slider, i, slide, firstImg, img, link;
+
+		// Ensure slides have images
+		slides = [];
+		for (i = 0; i < options.slides.length; i++) {
+			slide = options.slides[i];
+
+			if (slide.image) {
+				slides.push(slide);
+			}
+		}
+
+		// Return unless we have a location and slides
+		if (!location || slides.length < 1) {
 			return;
 		}
 
-		var id, slider, i, slide, firstImg, img, link;
-
+		// Build the slider
 		id = 'ideal-image-slider-' + ((Math.random() * 9999999) | 0) + '-' + (+ new Date);
 		slider = document.createElement('div');
 		slider.id = id;
 
-		for (i = 0; i < options.slides.length; i++) {
-			slide = options.slides[i];
+		for (i = 0; i < slides.length; i++) {
+			slide = slides[i];
 
 			img = document.createElement('img');
 
@@ -73,6 +87,7 @@ var IdealImageSliderInstallHelper = (function() {
 			}
 		}
 
+		// Inject the slider and initialize after the first image has loaded
 		firstImg.onload = function() {
 			location.appendChild(slider);
 
