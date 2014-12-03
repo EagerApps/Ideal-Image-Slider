@@ -64,13 +64,13 @@
         },
         "default": [
           {
-            "image": "http://gilbitron.github.io/Ideal-Image-Slider/public/img/1.jpg",
-            "description": "Example image description",
-            "link": "http://gilbitron.github.io/Ideal-Image-Slider"
+            "image": "//www.filepicker.io/api/file/IgSaGwlqRBqcWEbPt8XV",
+            "description": "Woman carrying balloons",
+            "link": "http://example.com"
           },
           {
-            "image": "http://gilbitron.github.io/Ideal-Image-Slider/public/img/2.jpg",
-            "description": "Another description"
+            "image": "//www.filepicker.io/api/file/njzWyYpRYaivIfFVg79Q",
+            "description": "Man in jeans on a skateboard"
           }
         ]
       }

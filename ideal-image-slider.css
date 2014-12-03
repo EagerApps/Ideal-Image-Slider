@@ -1,5 +1,5 @@
 /*
- * Ideal Image Slider v1.4.1-rc1
+ * Ideal Image Slider v1.4.1-rc2
  *
  * By Gilbert Pellegrom
  * http://gilbert.pellegrom.me

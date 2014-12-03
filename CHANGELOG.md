@@ -1,5 +1,9 @@
 # Ideal Image Slider Changelog
 
+Version 1.4.1-rc2 - 2014.12.03
+------------------------------
+ * [Changed] Improve install JSON defaults
+
 Version 1.4.1-rc1 - 2014.10.03
 ------------------------------
  * [Changed] Install helper excludes slides without images
