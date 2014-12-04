@@ -1,5 +1,9 @@
 # Ideal Image Slider Changelog
 
+Version 1.4.1-rc3 - 2014.12.03
+------------------------------
+ * [Changed] Further improvements to install JSON defaults
+
 Version 1.4.1-rc2 - 2014.12.03
 ------------------------------
  * [Changed] Improve install JSON defaults
