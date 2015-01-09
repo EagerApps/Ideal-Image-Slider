@@ -7,21 +7,6 @@ var IdealImageSliderInstallHelper = (function() {
 	"use strict";
 
 	/*
-	 * Helper functions
-	 */
-	var _ready = function(fn) {
-		if (document.addEventListener) {
-			return document.addEventListener('DOMContentLoaded', fn);
-		} else {
-			return document.attachEvent('onreadystatechange', function() {
-				if (document.readyState === 'interactive') {
-					return fn();
-				}
-			});
-		}
-	};
-
-	/*
 	 * Build slider HTML and initialize
 	 *
 	 * <div id="slider">
