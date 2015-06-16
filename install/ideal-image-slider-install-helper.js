@@ -49,7 +49,7 @@ var IdealImageSliderInstallHelper = (function() {
 			if (i === 0) {
 				firstImg = img;
 			} else {
-				img.setAttribute('data-src', slide.image);
+				img.setAttribute('data-src', encodeURIComponent(slide.image));
 			}
 
 			if (slide.description) {
